@@ -1,0 +1,11 @@
+@mixin setWidth ($width: 1518px) {
+    width: $width;
+}
+@mixin robotoFont ($weight: 400) {
+    font-family: "Roboto", sans-serif;
+    font-weight: $weight;
+}
+@mixin archivoFont ($weight: 400) {
+    font-family: "Archivo", sans-serif;
+    font-weight: $weight;
+}
