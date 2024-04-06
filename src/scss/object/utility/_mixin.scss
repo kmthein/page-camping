@@ -9,3 +9,14 @@
     font-family: "Archivo", sans-serif;
     font-weight: $weight;
 }
+@mixin archivoBlackFont ($weight: 400) {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin setMaxWidth ($width: 1518px) {
+    max-width: $width;
+}
+@mixin setWidth ($width: 1518px) {
+    width: $width;
+}

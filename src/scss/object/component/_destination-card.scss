@@ -1,0 +1,68 @@
+.c-destination-card {
+    width: calc((100% / 4) - (103px));
+    background: $whiteColor;
+    padding: 40px;
+    border-radius: 20px;
+    &__img {
+        position: relative;
+        height: 180px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &__overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .dest-fav {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 15px;
+            background-color: $whiteColor;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background: #f3e1dc;
+                transition: .5s;
+            }
+        }
+        .dest-price {
+            position: absolute;
+            width: 145px;
+            background: $whiteColor;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            p {
+                color: $orangeColor;
+                font-size: 16px;
+                @include robotoFont(500);
+                padding: 20px 0;
+                text-align: center;
+            }
+        }
+    }
+    &__info {
+        margin-top: 45px;
+        text-align: center;
+        h2 {
+            @include archivoFont(800);
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        p {
+            @include robotoFont();
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}

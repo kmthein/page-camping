@@ -1,3 +1,25 @@
 body {
     @include robotoFont();
+    background-color: $bgColor1;
+    overflow-x: hidden;
+}
+main {
+    position: relative;
+    &::before {
+        content: url("../img/right_blog.svg");
+        position: absolute;
+        top: -420px;
+        right: -350px;
+        z-index: 0;
+    }
+    &::after {
+        content: url("../img/left_blog.svg");
+        position: absolute;
+        left: -350px;
+        top: 350px;
+    }
+}
+header {
+    min-height: 120vh;
+    margin-bottom: 150px;
 }

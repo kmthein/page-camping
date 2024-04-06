@@ -1,0 +1,31 @@
+.p-destination {
+    width: 100%;
+    padding: 10px 0;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 150px;
+    @include setMaxWidth();
+    .destination-logo {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        &__inner {
+            position: absolute;
+            top: 0;
+            left: -10px;
+        }
+    }
+    .destination-info {
+        h1 {
+            @include archivoBlackFont();
+            font-size: 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .destination-box {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+}

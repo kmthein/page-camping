@@ -1,0 +1,23 @@
+.c-services-card {
+    background: $whiteColor;
+    width: calc(100% / 4);
+    padding: 60px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    &__info {
+        h2 {
+            @include archivoFont(800);
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        p {
+            @include robotoFont();
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}

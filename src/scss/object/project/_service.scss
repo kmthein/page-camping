@@ -1,0 +1,13 @@
+.p-services {
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    @include setMaxWidth();
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    &__container {
+        display: flex;
+        gap: 30px;
+    }
+}
