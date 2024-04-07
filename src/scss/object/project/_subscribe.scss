@@ -86,7 +86,7 @@
         }
     }          
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 800px) {
     .p-subscribe {
         @include setMaxWidth(374px);
         margin-bottom: 100px;

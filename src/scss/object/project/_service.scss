@@ -11,7 +11,7 @@
         gap: 30px;
     }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 800px) {
     .p-services {
         @include setMaxWidth(344px);
         bottom: 0;

@@ -12,6 +12,10 @@
 .c-btn-readmore {
     background: #eeeeee;
     border-radius: 25px;
+    &:hover {
+        background: #d6d6d6;
+        transition: .5s;
+    }
     a {
         color: #8D8D8D;
     }
@@ -19,6 +23,9 @@
 .c-btn-viewall {
     margin-top: 60px;
     color: #8D8D8D;
+    &:hover {
+        transition: .5s;
+    }
     a {
         color: $orangeColor;
         border: 1px solid $orangeColor;

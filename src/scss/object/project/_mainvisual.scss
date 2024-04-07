@@ -33,9 +33,13 @@
         a {
             color: #FFF;
         }
+        &:hover {
+            background: #cc654c;
+            transition: .5s;
+        }
     }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 800px) {
     .p-mainvisual {
         h2 {
             font-size: 45px;
