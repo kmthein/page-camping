@@ -15,7 +15,7 @@
         display: block;
     }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (min-width: 800px) {
     .inner-wrapper {
         padding: 0 40px;
     }

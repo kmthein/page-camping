@@ -13,7 +13,7 @@
 }
 @media screen and (max-width: 800px) {
     .p-services {
-        @include setMaxWidth(344px);
+        @include setMaxWidth(374px);
         bottom: 0;
         position: relative;
         margin-bottom: 100px;

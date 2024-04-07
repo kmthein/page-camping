@@ -100,3 +100,11 @@
         @include setWidth(374px);
     }
 }
+@media screen and (max-width: 1440px) and (min-width: 800px) {
+    .l-footer {
+        &__container, .footer-info__download {
+            padding: 0 80px;
+            padding-top: 110px;
+        }
+    }
+}
