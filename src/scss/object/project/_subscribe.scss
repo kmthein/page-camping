@@ -16,6 +16,9 @@
     &__inner {
         height: 100%;
         display: flex;
+        flex-direction: row-reverse;
+        z-index: 1;
+        position: relative;
         .subscribe-info {
             width: 50%;
             display: inline-flex;
@@ -81,13 +84,43 @@
             line-height: 25px;
             margin-bottom: 30px;
         }
-    }       
-    // position: relative;
-    // overflow: hidden;
-    // ::before {
-    //     content: url("../img/subscribe_blog.svg");
-    //     position: absolute;
-    //     top: -380px;
-    //     left: -200px;
-    // }     
+    }          
+}
+@media screen and (max-width: 415px) {
+    .p-subscribe {
+        @include setMaxWidth(374px);
+        margin-bottom: 100px;
+        &__blob {
+            top: -5%;
+            left: -145%;
+        }
+        &__inner {
+            display: block;
+            @include setWidth(342px);
+            margin: 0 auto;
+            .subscribe-img {
+                @include setWidth(100%);
+                img {
+                    @include setWidth(100%);
+                    margin: 40px 0;
+                }
+            }
+            .subscribe-info {
+                @include setWidth(100%);
+                &__inner {
+                    @include setWidth(100%);
+                    h2 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    .subscribe-form {
+                        @include setMaxWidth(100%);
+                        margin-bottom: 42px;
+                    }
+                }
+            }
+        }
+    }
 }

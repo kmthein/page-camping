@@ -11,3 +11,14 @@
         gap: 30px;
     }
 }
+@media screen and (max-width: 415px) {
+    .p-services {
+        @include setMaxWidth(344px);
+        bottom: 0;
+        position: relative;
+        margin-bottom: 100px;
+        &__container {
+            display: block;
+        }
+    }
+}

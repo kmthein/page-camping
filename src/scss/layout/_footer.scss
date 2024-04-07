@@ -3,6 +3,13 @@
     background-color: $bgColor3;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
+    position: relative;
+    h3 {
+        @include archivoBlackFont();
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: $darkColor;
+    }
     &__container {
         @include setMaxWidth(1518px);
         margin: 0 auto;
@@ -10,12 +17,6 @@
         color: $darkColor;
         display: flex;
         gap: 160px;
-        h3 {
-            @include archivoBlackFont();
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: $darkColor;
-        }
         .footer-info {
             max-width: 615px;
             p {
@@ -48,5 +49,41 @@
         padding: 60px 0;
         @include robotoFont();
         font-size: 16px;
+    }
+    .btt-btn {
+        background: #ffffffc7;
+        padding: 17.5px 21px;
+        border-radius: 25px;
+        position: absolute;
+        top: -30px;
+        right: 200px;
+    }
+}
+.footer-info__download {
+    @include setWidth(1518px);
+    margin: 0 auto;
+}
+@media screen and (max-width: 415px) {
+    .l-footer {
+        &__container {
+            display: block;
+            @include setWidth(374px);
+            .footer-tag {
+                margin: 40px 0;
+                max-width: 100%;
+                flex-wrap: wrap;
+                gap: 30px;
+                .footer-tag, .footer-about, .footer-plan {
+                    width: calc(50% - 30px);
+                }
+            }
+        }
+        .btt-btn {
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+    .footer-info__download {
+        @include setWidth(374px);
     }
 }

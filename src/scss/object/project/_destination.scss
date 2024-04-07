@@ -29,3 +29,16 @@
         }
     }
 }
+@media screen and (max-width: 415px) {
+    .p-destination {
+        @include setMaxWidth(374px);
+    }
+    .destination-info {
+        .destination-box {
+            display: block;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

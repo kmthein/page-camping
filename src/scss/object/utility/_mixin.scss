@@ -20,3 +20,7 @@
 @mixin setWidth ($width: 1518px) {
     width: $width;
 }
+
+@mixin setDisplayValue ($diplay: "block") {
+    display: block;
+}

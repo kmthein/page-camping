@@ -23,3 +23,22 @@ header {
     min-height: 120vh;
     margin-bottom: 150px;
 }
+@media screen and (max-width: 415px) {
+    header {
+        min-height: 90vh;
+        margin-bottom: 0;
+    }   
+    main {
+        &::before {
+            content: url("../img/right_blog_sm.svg");
+            top: -100px;
+            right: 0;
+            left: 100px;
+        }
+        &::after {
+            content: url("../img/left_blog_sm.svg");
+            left: -55%;
+            top: 50%;
+        }
+    }
+}
