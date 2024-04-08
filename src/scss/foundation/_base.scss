@@ -1,27 +1,31 @@
 body {
     @include robotoFont();
     background-color: $bgColor1;
-    overflow-x: hidden;
 }
 main {
     position: relative;
     &::before {
-        content: url("../img/right_blog.svg");
+        content: url("../img/right_shape.png");
         position: absolute;
         top: -420px;
-        right: -350px;
+        right: 0;
         z-index: 0;
+        @include setMaxWidth(100%);
+        overflow: hidden;
     }
     &::after {
-        content: url("../img/left_blog.svg");
+        content: url("../img/left_shape.png");
         position: absolute;
-        left: -350px;
-        top: 350px;
+        left: 0;
+        top: 550px;
+        @include setMaxWidth(100%);
+        overflow: hidden;
     }
 }
 header {
-    min-height: 120vh;
-    margin-bottom: 150px;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 @media screen and (max-width: 800px) {
     header {
@@ -29,16 +33,16 @@ header {
         margin-bottom: 0;
     }   
     main {
-        &::before {
-            content: url("../img/right_blog_sm.svg");
-            top: -100px;
-            right: 0;
-            left: 100px;
-        }
-        &::after {
-            content: url("../img/left_blog_sm.svg");
-            left: -55%;
-            top: 50%;
-        }
+        // &::before {
+        //     content: url("../img/right_blog_sm.svg");
+        //     top: -100px;
+        //     right: 0;
+        //     left: 100px;
+        // }
+        // &::after {
+        //     content: url("../img/left_blog_sm.svg");
+        //     left: -55%;
+        //     top: 50%;
+        // }
     }
 }

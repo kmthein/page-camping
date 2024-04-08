@@ -33,6 +33,11 @@
                         display: flex;
                         justify-content: space-between;
                         padding-right: 15px;
+                        .form-group {
+                                &::before {
+                                    content: url("../img/email.svg");
+                                }
+                        }
                     }
                     background: $whiteColor;
                     width: 616px;
@@ -87,6 +92,14 @@
     }          
 }
 @media screen and (max-width: 800px) {
+    .p-subscribe {
+        @include setMaxWidth(690px);
+        &__inner {
+            padding: 0 30px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
     .p-subscribe {
         @include setMaxWidth(374px);
         margin-bottom: 100px;

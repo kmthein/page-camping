@@ -68,6 +68,11 @@
 }
 @media screen and (max-width: 800px) {
     .c-destination-card {
+        width: calc(50% - 95px);
+    }
+}
+@media screen and (max-width: 500px) {
+    .c-destination-card {
         width: 100%;
     }
 }

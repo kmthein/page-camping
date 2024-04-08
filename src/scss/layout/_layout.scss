@@ -4,6 +4,10 @@
 .md-hidden {
     display: none;
 }
+.l-wrap-inner {
+    @include setMaxWidth();
+    margin: 0 auto;
+  }
 @media screen and (max-width: 1024px) {
     .xs-hidden {
         display: none;
@@ -15,8 +19,13 @@
         display: block;
     }
 }
-@media screen and (max-width: 1440px) and (min-width: 800px) {
+@media screen and (max-width: 1700px) and (min-width: 800px) {
     .inner-wrapper {
         padding: 0 40px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .l-wrap-inner {
+        @include setMaxWidth(374px);
     }
 }

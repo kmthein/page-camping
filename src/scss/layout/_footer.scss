@@ -13,10 +13,11 @@
     &__container {
         @include setMaxWidth(1518px);
         margin: 0 auto;
-        padding-top: 105px;
         color: $darkColor;
         display: flex;
         gap: 160px;
+        padding: 0 80px;
+        padding-top: 110px;
         .footer-info {
             max-width: 615px;
             p {
@@ -25,6 +26,7 @@
                 line-height: 28px;
             }
             &__download {
+                padding: 0 80px;
                 margin-top: 40px;
                 .down-img {
                     display: flex;
@@ -73,8 +75,9 @@
     }
 }
 .footer-info__download {
-    @include setWidth(1518px);
+    @include setMaxWidth();
     margin: 0 auto;
+    padding: 0 80px;
 }
 @media screen and (max-width: 800px) {
     .l-footer {
@@ -100,10 +103,21 @@
         @include setWidth(374px);
     }
 }
-@media screen and (max-width: 1440px) and (min-width: 800px) {
+@media screen and (max-width: 1700px) and (min-width: 800px) {
     .l-footer {
         &__container, .footer-info__download {
-            padding: 0 80px;
+            // padding: 0 80px;
+            padding-top: 110px;
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .l-footer {
+        &__container, .footer-info__download {
+            @include setMaxWidth(440px);
+            padding: 0;
+        }
+        &__container {
             padding-top: 110px;
         }
     }
