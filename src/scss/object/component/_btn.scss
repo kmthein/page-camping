@@ -9,6 +9,15 @@
         padding: 13px 50px;
     }
 }
+.close {
+    color: $whiteColor;
+    position: absolute;
+    right: 43px;
+    top: 48px;
+    svg {
+        color: $whiteColor;
+    }
+}
 .c-btn-readmore {
     background: #eeeeee;
     border-radius: 25px;
